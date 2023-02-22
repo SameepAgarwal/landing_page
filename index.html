@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastest delivery | www.SamDeliveryService.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  media="screen and (max-width: 1200px)" href="css/phone.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navigation">
+        <h2 class="heading">Sam's Tour</h2>
+        <img class="navigationHamburger" src="Hamburger_icon.png" >
+        <span class= "navigationMenu">
+            <ul class="ulClass">
+                <li class="items"><a href="#" class="itemsAnchor">Home</a></li>
+                <li class="items"><a href="#main-body" class="itemsAnchor" >Services</a></li>
+                <li class="items"><a href="#about-us" class="itemsAnchor">About</a></li>
+                <li class="items"><a href="#contact-us" class="itemsAnchor" >Contact us</a></li>
+                <!-- <li class="place">
+                    <label for="Cities">Cities: </label>
+                    <select name="Cities" id="cities">
+                        <option value="Stp" selected class="options">Sitapur</option>
+                    <option value="lko" class="options">Lucknow</option>
+                </select>
+                </li> -->
+            </ul>
+        </span>
+    </nav>
+
+
+    <section class="home-section">
+        <h1 class="heading">Best Delivery Services</h1>
+        <div id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cumque a eos quae neque dolorum
+            minus possimus optio voluptatibus tempore, accusamus quasi explicabo.</div>
+        <div id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit rem quibusdam.
+        </div>
+        <button class="btn">Order Now</button>
+        <div class="search">
+            <input type="search" name="search" id="search-place" placeholder="Search your favourite restraunts">
+            <img src="search-logo.png" alt="Net Slow">
+        </div>
+    </section>
+
+    <section id="main-body">
+        <div class="box">
+            <img src="Ship-logo.jpg" alt="Our Delivery by ships">
+            <p>                
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem in nihil quam quia culpa accusamus aliquid
+                modi ipsa asperiores at ad amet totam, nemo ea laborum? Accusamus illum labore vero maiores, necessitatibus
+                ea voluptatem illo nulla error earum quia, voluptatibus, recusandae veritatis cum.
+            </p>
+        </div>
+        <div class="box">
+            <img src="Truck-logo.jpg" alt="Our Delivery by ships">
+            <p>                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolore neque ipsa sapiente magni earum error
+                quaerat harum optio! A dolor, culpa sequi vel dolorum officia vitae dolore praesentium quos incidunt
+                corporis ad voluptates id reiciendis distinctio provident! Distinctio, odit! Quas, dolor aliquid.
+            </p>
+        </div>
+        <div class="box">
+            <img src="Airplane-logo.png" alt="Our Delivery by ships">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, reiciendis? Veritatis odio libero natus
+                quasi sequi iusto incidunt voluptatibus nihil necessitatibus dignissimos temporibus voluptate, adipisci
+                labore rem neque et tenetur possimus molestiae impedit laboriosam rerum nisi earum. Quidem provident nisi
+                eius eum sed?
+            </p>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <h2 class="about-heading">About Us</h2>
+        <div class="our-description">
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste voluptates dolor
+                expedita aut voluptas quas, corporis mollitia velit? Id illum incidunt corrupti? Excepturi!</p>
+            <img src="Delivery-photo.jpg" alt="Our services are Best">
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <h2 class="heading">Contact Us</h2>
+        <div class="info">
+            <div class="area">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="area">
+                <label for="name">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="area">
+                <label for="messege">Query: </label>
+                <textarea name="messege" id="messege"  placeholder="Type your Query Here"></textarea>
+            </div>
+            <div class="area">
+                <!-- <label for="name">Phone Number: </label> -->
+                <input type="submit" name="phone" id="detailSubmit">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        copyright &copy; www.samDeliveryService.com
+    </footer>
+    <script>
+        burger = document.querySelector('.navigationHamburger');
+        navigationMenu = document.querySelector('.navigationMenu');
+        burger.addEventListener('click' , ()=> {
+            navigationMenu.classList.toggle('hamBurgerToogle');
+       })
+    //    hamBurgerToogle = document.querySelector('.hamBurgerToogle');
+    ulClass = document.querySelector('.ulClass');
+    ulClass.addEventListener('click', ()=>{
+        navigationMenu.classList.toggle('hamBurgerToogle');
+       })
+
+    
+    </script>
+</body>
+
+</html>

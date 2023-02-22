@@ -1,0 +1,249 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(99, 85, 223);
+}
+#navigation{
+    /* display: flex; */
+    padding: 3px;
+    /* width: 100%; */
+    /* height: 123px; */
+    background-color:rgb(109 97 220 / 66%)
+}
+#navigation::before{
+    content: "";
+    background: url('../Delivery-photo.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    top: 0px;
+    left: 0px;
+}
+#navigation .heading{
+    display: inline;
+    /* width: fit-content; */
+    font-size: 1.8rem;
+    margin: 30px 0px 0px 30px; /* t r b l */
+    padding: 3px 30px; /*tb / lr */
+    /* top: 20px; */
+}
+.navigationHamburger{
+    /* visibility: hidden; */
+    display: none;
+}
+.navigationMenu{
+    float: right;
+    display: block;
+}
+
+#navigation ul{
+    display: flex;
+    /* width: 75%; */
+    /* width: fit-content; */
+    justify-content: flex-end;
+    position: relative;
+    /* right: 100px; */
+    /* top: 20px; */
+    
+}
+#navigation li{
+    list-style: none;
+    padding: 23px 34px;
+    font-size: 1.1rem;
+}
+#navigation li a , .place{
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+#navigation li a:hover,.place:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 3px 7px;
+}
+
+.home-section {
+    text-align: center;
+    height: 400px;
+    padding-top: 80px;
+    /* background-color: blanchedalmond; */
+}
+/* .home-section .home{
+    font-size: 3.5rem;
+    margin: 0px;
+} */
+.home-section .btn{
+    color: black;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: 15px;
+    padding: 0px 15px;
+}
+
+.home-section .btn:hover{
+    background-color: black;
+    color: #ffff;
+}
+.home-section #search-place{
+    padding: 5px;
+    margin: 20px 20px;
+    background-color: transparent;
+    width: 35%;
+    text-align: center;
+    color: (white, black);
+}
+.home-section #search-place:hover{
+    background-color: black;
+    color: #ffff;
+}
+.home-section #search-place:hover::placeholder{
+    color: #ffff;
+}
+.home-section .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-section .search img{
+    width: 36px;
+    filter: invert(90%);
+    cursor: pointer;
+}
+.place #cities{
+    background-color: transparent;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+.place .options{
+    color: black;
+}
+
+#main-body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(248 241 241);
+    /* height: 505px; */
+}
+#main-body .box{
+    background-color: white;
+    color: black;
+    height: fit-content;
+    position: relative;
+    bottom: 20px;
+    margin: 0px 8px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+#main-body img{
+    display: block;
+    margin: 25px auto;
+    height: 120px;
+}
+#main-body .box p{
+    padding: 10px;
+    margin: 0px;
+}
+
+#about-us{
+    /* background-color: rgb(248 241 241); */
+    background-color: rgb(213, 174, 174);
+    color: black;
+}
+#about-us .our-description{
+    display: flex;
+}
+#about-us .about-heading{
+    font-size: 1.9rem;
+    text-align: center;
+}
+#about-us .our-description .description{
+    padding: 140px 150px;
+    text-align: center;
+}
+#about-us .our-description img{
+    height: 350px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+#contact-us::before{
+    content: "";
+    position: absolute;
+}
+
+#contact-us{
+    background: url('../Contact-us.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: red 2px 0px;
+}
+#contact-us .heading,#contact-us label{
+    color: white;
+    /* display: inline; */
+    margin: 15px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content:space-evenly; */
+    width: 50%;
+}
+.info .area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.info input, .info textarea{
+    /* width: max-content; */
+    /* padding: 0.9rem; */
+    border-radius: 4px;
+    /* display: inline; */
+    width: 100%;
+}
+/* .info label{
+    margin-bottom: 15px;
+} */
+#contact-us input, #contact-us textarea{
+    margin: 15px;
+     /* t r b l*/
+    /* width: 100%; */
+    /* width: max-content; */
+}
+#detailSubmit{
+    background-color: antiquewhite;
+    width: 200px;
+    /* display: block; */
+    margin: auto;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: white;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-style:oblique;
+}
+
+.search::placeholder{
+    color: black;
+}
